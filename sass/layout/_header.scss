@@ -1,84 +1,62 @@
 .header {
   border-bottom: 1px solid var(--header-border-color);
+  &-container,
+  &-list,
+  &-contacts,
+  &-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &-nav__logo {
+    margin-right: 93px;
+  }
 }
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.header-container,
-.header-list,
-.header-contacts,
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.header-nav > .logo {
-  margin-right: 93px;
-}
-
-.header-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-contacts {
-  margin-left: auto;
-}
-
-.header-contacts > .header-item:first-child {
-  margin-right: 30px;
-}
-
-.header-text-color {
-  color: var(--second-text-color);
-}
-
-/* --------------------------- */
 
 .header-list {
   color: var(--second-text-color);
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    font-weight: 500;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--duration-cubic);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
 }
 
-.header-link {
-  font-weight: 500;
-  line-height: 1.14;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color var(--duration-cubic);
-}
-
-.header-link:hover,
-.header-link:focus,
-.current {
-  color: var(--accent-color);
+.header-contacts {
+  color: inherit;
+  margin-left: auto;
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__item:first-child {
+    margin-right: 30px;
+  }
 }
 
 .current {
   position: relative;
-}
-
-.current::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-}
-
-.header-item-icon {
-  margin-right: 10px;
-  fill: currentColor;
+  color: var(--accent-color);
+  &::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
 }
