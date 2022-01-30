@@ -1,11 +1,6 @@
-@import "./utils/card-set";
-@import "./utils/modal";
-@import "./utils/variables";
-@import "./utils/section";
-
-@import "./base/vh";
-@import "./base/reset";
 @import "./base/body";
+@import "./base/reset";
+@import "./base/vh";
 
 @import "./components/button";
 @import "./components/social";
@@ -19,3 +14,8 @@
 @import "./layout/customers";
 @import "./layout/footer";
 @import "./layout/projects";
+
+@import "./utils/card-set";
+@import "./utils/modal";
+@import "./utils/variables";
+@import "./utils/section";

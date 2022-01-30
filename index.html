@@ -643,84 +643,84 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#">
           <div class="form-field">
-            <label for="user-name" class="input-text">Имя</label>
-            <div class="input-wpap">
+            <label for="user-name" class="form-field__label">Имя</label>
+            <div class="input-wrap">
               <input
                 type="text"
                 name="user-name"
-                class="form-input"
+                class="input-wrap__text"
                 id="user-name"
                 required
               />
-              <svg class="input-icon" width="18" height="18">
+              <svg class="input-wrap__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
           <div class="form-field">
-            <label for="user-tel" class="input-text">Телефон</label>
-            <div class="input-wpap">
+            <label for="user-tel" class="form-field__label">Телефон</label>
+            <div class="input-wrap">
               <input
                 type="tel"
                 name="user-tel"
-                class="form-input"
+                class="input-wrap__text"
                 id="user-tel"
                 required
               />
-              <svg class="input-icon" width="18" height="18">
+              <svg class="input-wrap__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="form-field">
-            <label for="user-email" class="input-text">Почта</label>
-            <div class="input-wpap">
+            <label for="user-email" class="form-field__label">Почта</label>
+            <div class="input-wrap">
               <input
                 type="email"
                 name="user-email"
-                class="form-input"
+                class="input-wrap__text"
                 id="user-email"
                 required
               />
-              <svg class="input-icon" width="18" height="18">
+              <svg class="input-wrap__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="form-field form-comment">
-            <label for="user-text" class="input-text">Комментарий</label>
+          <div class="form-field comments">
+            <label for="user-text" class="form-field__label">Комментарий</label>
             <textarea
               name="user-text"
               id="user-text"
-              class="form-text"
+              class="input-wrap__text comments__text"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="form-terms">
+          <div class="policy">
             <input
               type="checkbox"
-              name="terms"
-              id="terms"
-              class="terms-check visually-hidden"
+              name="policy"
+              id="policy"
+              class="policy__check visually-hidden"
             />
-            <label for="terms" class="checkbox-terms"
-              ><span class="checkbox-item">
-                <svg class="checkbox-icon" width="11" height="8">
+            <label for="policy" class="policy__checkbox"
+              ><span class="policy__item">
+                <svg class="policy__icon" width="11" height="8">
                   <use href="images/icons.svg#icon-check"></use></svg></span
               >Соглашаюсь с рассылкой и принимаю&nbsp;
               <a
                 href="./"
-                class="link terms-link"
+                class="link policy__link"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >Условия договора</a
               ></label
             >
           </div>
-          <button type="submit" class="button modal-submit-btn">
+          <button type="submit" class="button modal__submit-btn">
             Отправить
           </button>
         </form>
