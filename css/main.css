@@ -5,7 +5,7 @@
   margin-top: -30px;
 }
 
-.item {
+.card-set__item {
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -680,17 +680,14 @@ address {
 .projects-btn-list {
   display: flex;
   justify-content: center;
-}
-
-.projects-btn-list {
   margin-bottom: 50px;
 }
 
-.projects-list-item:not(:last-child) {
+.projects-btn-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.projects-btn {
+.projects-btn-list__btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -706,31 +703,29 @@ address {
   transition: color var(--duration-cubic), background var(--duration-cubic), box-shadow var(--duration-cubic);
 }
 
-.projects-btn:focus,
-.projects-btn:hover,
-.active {
+.projects-btn-list__btn:hover, .projects-btn-list__btn:focus,
+.projects-btn-list .active {
   color: var(--btn-text-color);
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-link-item {
+.projects-card-list__item {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.projects-link-list .link {
+.projects-card-list__link {
   display: flex;
   flex-direction: column;
   transition: box-shadow var(--duration-cubic);
 }
 
-.projects-link-list .link:hover,
-.projects-link-list .link:focus {
+.projects-card-list__link:hover, .projects-card-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-link-item .link:hover .projects-item-text,
-.projects-link-item .link:focus .projects-item-text {
+.projects-card-list__link:hover .projects-item-wrap__text,
+.projects-card-list__link:focus .projects-item-wrap__text {
   transform: translateY(0);
 }
 
@@ -739,7 +734,7 @@ address {
   overflow: hidden;
 }
 
-.projects-item-text {
+.projects-item-wrap__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -752,7 +747,13 @@ address {
   transition: transform var(--duration-cubic);
 }
 
-.projects-list-title {
+.projects-card-footer {
+  background: var(--btn-text-color);
+  border: 1px solid var(--border-card-color);
+  padding: 20px 24px;
+}
+
+.projects-card-footer__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -760,14 +761,8 @@ address {
   margin-bottom: 4px;
 }
 
-.projects-list-text {
+.projects-card-footer__text {
   font-size: 16px;
   line-height: 1.87;
-}
-
-.projects-card-footer {
-  background: var(--btn-text-color);
-  border: 1px solid var(--border-card-color);
-  padding: 20px 24px;
 }
 /*# sourceMappingURL=main.css.map */
