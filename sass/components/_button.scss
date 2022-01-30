@@ -12,10 +12,9 @@
   padding: 10px 32px;
   border: none;
   transition: background var(--duration-cubic), box-shadow var(--duration-cubic);
-}
-
-.button:focus,
-.button:hover {
-  background: var(--btn-hover-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:focus,
+  &:hover {
+    background: var(--btn-hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
