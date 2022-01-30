@@ -452,7 +452,11 @@ address {
   padding-bottom: 0;
 }
 
-.features-item-image {
+.features-list__item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.features-list__image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -462,11 +466,7 @@ address {
   margin-bottom: 30px;
 }
 
-.features-item {
-  flex-basis: calc(100% / 4 - 30px);
-}
-
-.features-item-title {
+.features-list__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;

@@ -2,23 +2,23 @@
   padding-bottom: 0;
 }
 
-.features-item-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  background-color: var(--second-background-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.features-item {
-  flex-basis: calc(100% / 4 - 30px);
-}
-
-.features-item-title {
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+.features-list {
+  &__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: var(--second-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 }
