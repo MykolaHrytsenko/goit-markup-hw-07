@@ -473,7 +473,7 @@ address {
   margin-bottom: 10px;
 }
 
-.section-title {
+.wwd .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -481,12 +481,12 @@ address {
   margin-bottom: 50px;
 }
 
-.wwd-item {
+.wwd-list__item {
   position: relative;
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.wwd-item-text {
+.wwd-list__text {
   position: absolute;
   bottom: 0;
   left: 0;
