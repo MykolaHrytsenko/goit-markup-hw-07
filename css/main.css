@@ -223,6 +223,19 @@
   --form-text-color: rgba(117, 117, 117, 0.5);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -291,11 +304,6 @@ address {
   margin: 0 auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .button {
   font-family: inherit;
   background: var(--accent-color);
@@ -323,11 +331,11 @@ address {
   justify-content: center;
 }
 
-.social-item:not(:last-child) {
+.social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-link {
+.social-list__link {
   width: 44px;
   height: 44px;
   background-color: var(--btn-text-color);
@@ -339,7 +347,7 @@ address {
   transition: background-color var(--duration-cubic);
 }
 
-.social-icon {
+.social-list__icon {
   fill: currentColor;
 }
 
@@ -473,14 +481,6 @@ address {
   margin-bottom: 10px;
 }
 
-.wwd .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .wwd-list__item {
   position: relative;
   flex-basis: calc(100% / 3 - 30px);
@@ -507,41 +507,40 @@ address {
   background-color: var(--second-background-color);
 }
 
-.team-item {
+.team .social-list__link {
+  transition: background-color var(--duration-cubic), color var(--duration-cubic);
+}
+
+.team .social-list__link:hover,
+.team .social-list__link:focus {
+  background-color: var(--accent-color);
+  color: var(--btn-text-color);
+}
+
+.team-list__item {
   background: var(--btn-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.team-item-content {
+.team-item__box {
   padding: 30px 32px;
 }
 
-.team-item-name,
-.team-item-positions {
+.team-item__name, .team-item__positions {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.team-item-name {
+.team-item__name {
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.team-item-positions {
+.team-item__positions {
   margin-bottom: 16px;
-}
-
-.team .social-link {
-  transition: background-color var(--duration-cubic), color var(--duration-cubic);
-}
-
-.team .social-link:hover,
-.team .social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--btn-text-color);
 }
 
 .customer-list-item {
